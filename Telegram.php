@@ -3006,7 +3006,7 @@ class Telegram {
         }
         curl_close($ch);
         if ($this->logger) {
-        	$resultArr = json_decode($result, true)
+            $resultArr = json_decode($result, true);
             if ($resultArr['ok'] === false) {
                 $this->logger->error(
                     'Telegram error', [
